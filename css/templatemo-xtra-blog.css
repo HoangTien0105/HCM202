@@ -80,8 +80,8 @@ hr {
 .tm-site-logo i { color: #0CC; }
 
 .tm-main {
-    margin-left: 400px;
-    padding: 80px 100px 25px;
+    margin-left: 560px;
+    padding: 20px 100px 25px;
 }
 
 .tm-post { max-width: 470px; }
@@ -90,6 +90,21 @@ hr {
     max-width: 980px;
     justify-content: space-between;
 }
+
+.tm-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tm-image-wrapper img {
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto;
+    object-fit: cover; 
+}
+
 
 .tm-nav { margin-bottom: 100px; }
 
@@ -262,7 +277,7 @@ ul {
     color: #999;
 }
 
-.tm-post-link:hover .tm-post-title { color: #0CC; }
+.tm-post-link:hover .tm-post-title { color: rgb(235, 117, 111); }
 
 .tm-btn {
     display: inline-block;
