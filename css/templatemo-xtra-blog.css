@@ -148,6 +148,15 @@ hr {
 
 .tm-nav-link i { margin-right: 37px; }
 
+.tm-caption {
+    color: black; /* Đổi màu chữ thành đen */
+    font-style: italic; /* Chữ in nghiêng */
+    text-align: center; /* Căn giữa nội dung */
+    width: 100%; /* Đảm bảo chiều ngang bằng với ảnh */
+    max-width: 100%; /* Không vượt quá kích thước ảnh */
+    display: block; /* Đảm bảo nó không bị thu nhỏ */
+}
+
 ul { 
     margin: 0; 
     padding: 0;
@@ -439,6 +448,68 @@ a:hover figcaption { color: #056767; }
     list-style: none; 
     display: inline-block;
 }
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url('https://bcp.cdnchinhphu.vn/334894974524682240/2022/5/19/hcm1-16529275928651573705413-0-0-375-600-crop-16529276019091318892288.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Đổi toàn bộ chữ thành trắng */
+    text-align: center;
+    padding-bottom: 20px; /* Tạo khoảng cách giữa ảnh và nội dung bên dưới */
+}
+
+.hero-content {
+    max-width: 80%;
+    z-index: 2;
+}
+
+.hero-meta {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white; /* Đổi thành màu trắng */
+    opacity: 1;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white; /* Đổi thành màu trắng */
+}
+
+.hero-desc {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white; /* Đổi thành màu trắng */
+    margin-bottom: 20px; /* Tạo khoảng cách xuống nội dung dưới */
+}
+
+.audio-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Làm tối nền để chữ dễ đọc */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
 
 .tm-social-links li a {
     display: block;
