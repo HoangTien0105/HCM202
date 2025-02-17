@@ -463,6 +463,20 @@ a:hover figcaption { color: #056767; }
     padding-bottom: 20px; /* Tạo khoảng cách giữa ảnh và nội dung bên dưới */
 }
 
+.van-hoa{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url("../img/vanhoacon.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Đổi toàn bộ chữ thành trắng */
+    text-align: center;
+    padding-bottom: 20px; /* Tạo khoảng cách giữa ảnh và nội dung bên dưới */
+}
+
 .hero-content {
     max-width: 80%;
     z-index: 2;

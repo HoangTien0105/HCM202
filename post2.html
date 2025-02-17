@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Xtra Blog</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCM202</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Xtra Blog
+    <style>
+        .tm-post-sidebar ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-https://templatemo.com/tm-553-xtra-blog
+        .tm-post-sidebar ul li a {
+            text-decoration: none;
+            color: #d32f2f;
+            font-weight: bold;
+        }
 
--->
+        .tm-post-sidebar ul li ul li a {
+            color: black;
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+
+        .tm-post-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .tm-hr-primary {
+            border-top: 3px solid #d32f2f;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+    </style>
 </head>
+
 <body>
-	<header class="tm-header header" id="tm-header">
+    <header class="tm-header header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -25,31 +65,31 @@ https://templatemo.com/tm-553-xtra-blog
             <div class="tm-site-header">
                 <div class="mb-3 mx-auto tm-site-logo header-logo">
                     <img src="./img/star.jpg" alt="" class="header-logo">
-                </div>         
+                </div>
                 <h1 class="text-center">Tư tưởng Hồ Chí Minh</h1>
             </div>
-            <nav class="tm-nav" id="tm-nav">            
+            <nav class="tm-nav" id="tm-nav">
                 <ul>
                     <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Trang chủ
-                    </a></li>
-                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
-                        <i class="fas fa-pen"></i>
-                        Tư tưởng Hồ Chí Minh về văn hóa
-                    </a></li>
+                            <i class="fas fa-home"></i>
+                            Trang chủ
+                        </a></li>
+                    <li class="tm-nav-item"><a href="vanhoa.html" class="tm-nav-link">
+                            <i class="fas fa-pen"></i>
+                            Tư tưởng Hồ Chí Minh về văn hóa
+                        </a></li>
                     <li class="tm-nav-item"><a href="daoduc.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        Tư tưởng Hồ Chí Minh về Đạo Đức
-                    </a></li>                               
+                            <i class="fas fa-users"></i>
+                            Tư tưởng Hồ Chí Minh về đạo đức
+                        </a></li>
                     <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
-                        <i class="far fa-comments"></i>
-                        Văn hóa còn thì dân tộc còn 
-                    </a></li>
+                            <i class="far fa-comments"></i>
+                            Văn hóa còn thì dân tộc còn
+                        </a></li>
                     <li class="tm-nav-item active"><a href="post2.html" class="tm-nav-link">
-                        <i class="far fa-comments"></i>
-                        Văn hóa là nền tảng
-                    </a></li>
+                            <i class="far fa-comments"></i>
+                            Văn hóa là nền tảng
+                        </a></li>
                 </ul>
             </nav>
             <div class="tm-mb-65">
@@ -67,122 +107,130 @@ https://templatemo.com/tm-553-xtra-blog
                 </a>
             </div>
             <p class="tm-mb-80 pr-5 text-white">
-                Tư tưởng Hồ Chí Minh, nhóm 9 
+                Tư tưởng Hồ Chí Minh, nhóm 9
             </p>
         </div>
     </header>
     <div class="container-fluid">
         <main class="tm-main">
-            <!-- Search form -->
             <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>                                
-                    </form>
-                </div>                
-            </div>            
-            <div class="row tm-row">
-                <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
-                    <!-- Video player 1422x800 -->
-                    <video width="954" height="535" controls class="tm-mb-40">
-                        <source src="video/wheat-field.mp4" type="video/mp4">							  
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="col-12 text-center">
+                    <div class="van-hoa">
+                    </div>
                 </div>
             </div>
             <div class="row tm-row">
                 <div class="col-lg-8 tm-post-col">
-                    <div class="tm-post-full">                    
-             <!-- ... (Keep all previous HTML code unchanged until the main content section) ... -->
+                    <div class="tm-post-full">
 
-<div class="mb-4">
-    <h2 class="pt-2 tm-color-primary tm-post-title">Tại sao "văn hóa còn thì dân tộc còn"</h2>
-    
-    <p class="tm-mb-40">
-        <!-- Existing content sections 1-2 here -->
-        
-        <h3 class="tm-color-primary tm-post-title tm-mb-30">3. Văn hóa là nền tảng để hội nhập và phát triển trong thời đại mới</h3>
-        <p>
-            Trong bối cảnh hội nhập quốc tế, Hồ Chí Minh nhấn mạnh rằng một dân tộc muốn tồn tại và phát triển phải biết giữ gìn bản sắc văn hóa, đồng thời tiếp thu tinh hoa văn hóa nhân loại.
-        </p>
+                        <div class="mb-4">
+                            <h2 class="pt-2 tm-color-primary tm-post-title">Tại sao "văn hóa còn thì dân tộc còn"</h2>
 
-        <h4 class="tm-color-primary tm-post-title tm-mb-20">3.1. Giữ gìn bản sắc trong hội nhập</h4>
-        <p>
-            Bản sắc văn hóa chính là “tấm căn cước” để mỗi dân tộc khẳng định vị thế của mình trên trường quốc tế. Hồ Chí Minh nhấn mạnh: “Dân ta phải biết sử ta, cho tường gốc tích nước nhà Việt Nam.” Đây là lời nhắn nhủ sâu sắc về việc hiểu rõ và tự hào về truyền thống văn hóa dân tộc, coi đó là nền tảng để hội nhập quốc tế mà không bị hòa tan.
-        </p>
+                            <p class="tm-mb-40">
+                            <h3 id="nen-tang-hoi-nhap" class="tm-color-primary tm-post-title tm-mb-30">3. Văn hóa là nền
+                                tảng để hội nhập và phát triển trong thời đại mới</h3>
+                            <p>
+                                Trong bối cảnh hội nhập quốc tế, Hồ Chí Minh nhấn mạnh rằng một dân tộc muốn tồn tại và
+                                phát triển phải biết giữ gìn bản sắc văn hóa, đồng thời tiếp thu tinh hoa văn hóa nhân
+                                loại.
+                            </p>
 
-        <h4 class="tm-color-primary tm-post-title tm-mb-20">3.2. Tiếp thu tinh hoa văn hóa nhân loại</h4>
-        <p>
-            Hồ Chí Minh cũng khuyến khích việc học hỏi những giá trị tiến bộ từ các nền văn hóa khác để làm phong phú thêm văn hóa dân tộc. Tuy nhiên, việc tiếp thu cần có chọn lọc, giữ vững tinh thần độc lập và tự tôn dân tộc.<br>
-            Người từng viết: “Chúng ta không sợ giao lưu văn hóa, nhưng phải tỉnh táo, giữ vững bản sắc riêng của mình.” Điều này cho thấy sự cân bằng giữa hội nhập và bảo tồn văn hóa trong tư tưởng Hồ Chí Minh.
-        </p>
+                            <h4 id="ban-sac-dan-toc" class="tm-color-primary tm-post-title tm-mb-20">3.1. Giữ gìn bản
+                                sắc trong hội nhập</h4>
+                            <p>
+                                Bản sắc văn hóa chính là “tấm căn cước” để mỗi dân tộc khẳng định vị thế của mình trên
+                                trường quốc tế. Hồ Chí Minh nhấn mạnh: “Dân ta phải biết sử ta, cho tường gốc tích nước
+                                nhà Việt Nam.” Đây là lời nhắn nhủ sâu sắc về việc hiểu rõ và tự hào về truyền thống văn
+                                hóa dân tộc, coi đó là nền tảng để hội nhập quốc tế mà không bị hòa tan.
+                            </p>
 
-        <div class="text-center tm-mb-40">
-            <img src="https://www.tapchicongsan.org.vn/image/journal/article?img_id=353153801&t=1710307000416" 
-                 alt="Hội nhập văn hóa quốc tế" 
-                 class="img-fluid rounded tm-mb-20">
-            <p class="tm-color-primary tm-text-small">Giao lưu văn hóa quốc tế - Bảo tồn và phát triển</p>
-        </div>
+                            <h4 id="tinh-hoa-van-hoa" class="tm-color-primary tm-post-title tm-mb-20">3.2. Tiếp thu tinh
+                                hoa văn hóa nhân loại</h4>
+                            <p>
+                                Hồ Chí Minh cũng khuyến khích việc học hỏi những giá trị tiến bộ từ các nền văn hóa khác
+                                để làm phong phú thêm văn hóa dân tộc. Tuy nhiên, việc tiếp thu cần có chọn lọc, giữ
+                                vững tinh thần độc lập và tự tôn dân tộc.<br>
+                                Người từng viết: “Chúng ta không sợ giao lưu văn hóa, nhưng phải tỉnh táo, giữ vững bản
+                                sắc riêng của mình.” Điều này cho thấy sự cân bằng giữa hội nhập và bảo tồn văn hóa
+                                trong tư tưởng Hồ Chí Minh.
+                            </p>
 
-        <h3 class="tm-color-primary tm-post-title tm-mb-30">4. Thực tiễn chứng minh: Văn hóa giữ dân tộc tồn tại</h3>
+                            <div class="text-center tm-mb-40">
+                                <img src="https://www.tapchicongsan.org.vn/image/journal/article?img_id=353153801&t=1710307000416"
+                                    alt="Hội nhập văn hóa quốc tế" class="img-fluid rounded tm-mb-20">
+                                <p class="tm-color-primary tm-text-small">Giao lưu văn hóa quốc tế - Bảo tồn và phát
+                                    triển</p>
+                            </div>
 
-        <h4 class="tm-color-primary tm-post-title tm-mb-20">4.1. Trong thời kỳ bị đô hộ</h4>
-        <p>
-            Dưới ách thống trị của các thế lực ngoại bang, văn hóa Việt Nam đóng vai trò quan trọng trong việc giữ vững tinh thần yêu nước và chống lại âm mưu đồng hóa. Các giá trị văn hóa như tiếng Việt, chữ Nôm, phong tục tập quán, và các lễ hội truyền thống đã giúp dân tộc ta giữ được bản sắc riêng.
-        </p>
+                            <h3 id="dan-toc-ton-tai" class="tm-color-primary tm-post-title tm-mb-30">4. Thực tiễn chứng
+                                minh: Văn hóa giữ dân tộc tồn tại</h3>
 
-        <h4 class="tm-color-primary tm-post-title tm-mb-20">4.2. Trong kháng chiến</h4>
-        <p>
-            Trong các cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ, văn hóa cách mạng đã trở thành vũ khí sắc bén để động viên tinh thần chiến đấu của toàn dân. Những bài ca, câu chuyện về anh hùng, các tác phẩm văn nghệ đã thắp sáng ngọn lửa yêu nước và đoàn kết toàn dân.
-        </p>
+                            <h4 id="do-ho" class="tm-color-primary tm-post-title tm-mb-20">4.1. Trong thời kỳ bị đô hộ
+                            </h4>
+                            <p>
+                                Dưới ách thống trị của các thế lực ngoại bang, văn hóa Việt Nam đóng vai trò quan trọng
+                                trong việc giữ vững tinh thần yêu nước và chống lại âm mưu đồng hóa. Các giá trị văn hóa
+                                như tiếng Việt, chữ Nôm, phong tục tập quán, và các lễ hội truyền thống đã giúp dân tộc
+                                ta giữ được bản sắc riêng.
+                            </p>
 
-        <h4 class="tm-color-primary tm-post-title tm-mb-20">4.3. Trong thời đại hội nhập</h4>
-        <p>
-            Ngày nay, văn hóa tiếp tục là sức mạnh mềm giúp Việt Nam khẳng định vị thế trên trường quốc tế. Từ ẩm thực, nghệ thuật, đến các giá trị truyền thống như lòng nhân ái, đoàn kết và yêu chuộng hòa bình, văn hóa Việt Nam đã trở thành cầu nối để gắn kết với bạn bè quốc tế.
-        </p>
+                            <h4 id="khang-chien" class="tm-color-primary tm-post-title tm-mb-20">4.2. Trong kháng chiến</h4>
+                            <p>
+                                Trong các cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ, văn hóa cách mạng đã trở
+                                thành vũ khí sắc bén để động viên tinh thần chiến đấu của toàn dân. Những bài ca, câu
+                                chuyện về anh hùng, các tác phẩm văn nghệ đã thắp sáng ngọn lửa yêu nước và đoàn kết
+                                toàn dân.
+                            </p>
 
-        <h3 class="tm-color-primary tm-post-title tm-mb-30">Kết luận</h3>
-        <p>
-            Quan điểm “Văn hóa còn thì dân tộc còn” phản ánh rõ vai trò sống còn của văn hóa trong tư tưởng Hồ Chí Minh. Văn hóa không chỉ là yếu tố bảo tồn bản sắc mà còn là động lực để phát triển, là nền tảng cho sự độc lập, tự do và hội nhập quốc tế. Do đó, nhiệm vụ của mỗi người Việt Nam là bảo vệ và phát huy các giá trị văn hóa dân tộc, xem đó như chìa khóa để xây dựng một xã hội tiến bộ, bền vững và giàu bản sắc.
-        </p>
-    </div>
+                            <h4 id="hoi-nhap" class="tm-color-primary tm-post-title tm-mb-20">4.3. Trong thời đại hội nhập</h4>
+                            <p>
+                                Ngày nay, văn hóa tiếp tục là sức mạnh mềm giúp Việt Nam khẳng định vị thế trên trường
+                                quốc tế. Từ ẩm thực, nghệ thuật, đến các giá trị truyền thống như lòng nhân ái, đoàn kết
+                                và yêu chuộng hòa bình, văn hóa Việt Nam đã trở thành cầu nối để gắn kết với bạn bè quốc
+                                tế.
+                            </p>
 
-    <!-- Keep the comments section and remaining HTML structure unchanged -->
-    <!-- ... Rest of the HTML code remains the same ... -->
-                        
-                        <!-- Comments -->
-                        <div>
-                                              
+                            <h3 id="ket-luan" class="tm-color-primary tm-post-title tm-mb-30">Kết luận</h3>
+                            <p>
+                                Quan điểm “Văn hóa còn thì dân tộc còn” phản ánh rõ vai trò sống còn của văn hóa trong
+                                tư tưởng Hồ Chí Minh. Văn hóa không chỉ là yếu tố bảo tồn bản sắc mà còn là động lực để
+                                phát triển, là nền tảng cho sự độc lập, tự do và hội nhập quốc tế. Do đó, nhiệm vụ của
+                                mỗi người Việt Nam là bảo vệ và phát huy các giá trị văn hóa dân tộc, xem đó như chìa
+                                khóa để xây dựng một xã hội tiến bộ, bền vững và giàu bản sắc.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <aside class="col-lg-4 tm-aside-col">
+                <aside id="side-bar" class="col-lg-4 tm-aside-col">
                     <div class="tm-post-sidebar">
-                        <hr class="mb-3 tm-hr-primary">
-                        <h2 class="mb-4 tm-post-title tm-color-primary">Mục Lục</h2>
-                        <ul class="tm-mb-75 pl-5 tm-category-list">
-                            <li><a href="#" class="tm-color-primary">Văn hóa là nền tảng để hội nhập và phát triển trong thời đại mới</a></li>
-                            <li><a href="#" class="tm-color-primary">Giữ gìn bản sắc trong hội nhập</a></li>
-                            <li><a href="#" class="tm-color-primary">Tiếp thu tinh hoa văn hóa nhân loại</a></li>
-                            <li><a href="#" class="tm-color-primary">Thực tiễn chứng minh: Văn hóa giữ dân tộc tồn tại</a></li>
-                            <li><a href="#" class="tm-color-primary">Trong thời kỳ bị đô hộ</a></li>
-                            <li><a href="#" class="tm-color-primary">Trong kháng chiến</a></li>
-                            <li><a href="#" class="tm-color-primary">Trong kháng chiến</a></li>
+                        <br>
+                        <h2 class="tm-color-primary">Mục lục</h2>
+                        <hr class="tm-hr-primary">
+                        <ul>
+                            <li><a href="#nen-tang-hoi-nhap">3. Văn hóa là nền tảng để hội nhập và phát triển trong thời
+                                    đại mới</a>
+                                <ul>
+                                    <li><a href="#ban-sac-dan-toc">3.1. Giữ gìn bản sắc trong hội nhập</a></li>
+                                    <li><a href="#tinh-hoa-van-hoa">3.2. Tiếp thu tinh hoa văn hóa nhân loại</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#dan-toc-ton-tai">4. Thực tiễn chứng minh: Văn hóa giữ dân tộc tồn tại</a>
+                                <ul>
+                                    <li><a href="#do-ho">4.1. Trong thời kỳ bị đô hộ</a></li>
+                                    <li><a href="#khang-chien">4.2. Trong kháng chiến</a></li>
+                                    <li><a href="#hoi-nhap">4.3. Trong thời đại hội nhập</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#ket-luan">Kết luận</a></li>
                         </ul>
-                     
-                       
-                    </div>                    
+                    </div>
                 </aside>
             </div>
             <footer class="row tm-row">
-                <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                <div class="col-md-6 col-12 tm-color-black">
+                    <a href="#side-bar" style="color: rgb(218, 37, 29);">Click here to return to side bar </a>
                 </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                <div class="col-md-6 col-12 tm-color-black tm-copyright">
                     Copyright 2020 Xtra Blog Company Co. Ltd.
                 </div>
             </footer>
@@ -191,4 +239,5 @@ https://templatemo.com/tm-553-xtra-blog
     <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/templatemo-script.js"></script>
 </body>
+
 </html>
